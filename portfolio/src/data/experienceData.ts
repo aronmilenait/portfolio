@@ -11,7 +11,7 @@ export const workExperience: Experience[] = [
     company: "Connect Nodes IO",
     location: "Miami, USA",
     role: "Back End Developer",
-    timeframe: "July 2024 - Present (Part-Time)",
+    timeframe: "July 2024 - Present",
     responsibilities: [
       "Development of back-end services using Express.js and SQLite with JavaScript and TypeScript.",
       "Efficient web scraping implementation with Puppeteer, improving the quality and speed of collected data.",
@@ -22,7 +22,7 @@ export const workExperience: Experience[] = [
     company: "Bigger",
     location: "Sydney, Australia",
     role: "Web Developer",
-    timeframe: "June 2023 - Present (Full-Time)",
+    timeframe: "June 2023 - August 2024",
     responsibilities: [
       "Engage in full-stack development, specializing in front-end technologies like TypeScript, React, Vite, and Tailwind CSS, alongside back-end development using NestJS, TypeORM, Docker, and MySQL.",
       "Utilize low-code platforms such as Webflow, WordPress, and LeadPages for diverse web development projects ranging from simple landing pages to complex websites.",
