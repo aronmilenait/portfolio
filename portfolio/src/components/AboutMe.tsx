@@ -25,7 +25,8 @@ export const AboutMe = () => {
         >
           I am a <b>full-stack developer</b> from Argentina who adheres to SOLID
           principles to ensure high-quality code. With over a year of experience
-          in the field, my true passion lies in <b>back-end development.</b>
+          in the field, my true passion lies in <b>back-end development</b>, but
+          I also enjoy creating beautiful websites.
         </motion.p>
         <motion.p
           className="text-md sm:text-2xl lg:text-2xl text-shadow-md"
@@ -33,9 +34,8 @@ export const AboutMe = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          Coding is one of the things I enjoy doing! Besides that, I also love
-          creating covers and my own songs, as well as working with{" "}
-          <b>GNU/Linux</b>, the only OS I&apos;ve been using since 2015.
+          Besides coding, I&apos;ve been using <b>GNU/Linux</b> since 2015,
+          which has given me a solid foundation in the field.
         </motion.p>
       </motion.div>
     </section>
