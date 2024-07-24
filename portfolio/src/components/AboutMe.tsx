@@ -35,7 +35,7 @@ export const AboutMe = () => {
           transition={{ duration: 1, delay: 1 }}
         >
           Besides coding, I&apos;ve been using <b>GNU/Linux</b> since 2015,
-          which has given me a solid foundation in the field.
+          which has given me a solid foundation in that area.
         </motion.p>
       </motion.div>
     </section>
