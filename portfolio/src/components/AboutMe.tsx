@@ -29,13 +29,22 @@ export const AboutMe = () => {
           I also enjoy creating beautiful websites.
         </motion.p>
         <motion.p
-          className="text-md sm:text-2xl lg:text-2xl text-shadow-md"
+          className="text-md sm:text-2xl lg:text-2xl mb-4 text-shadow-md"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          Besides coding, I&apos;ve been using <b>GNU/Linux</b> since 2015,
-          which has given me a solid foundation in that area.
+          Besides coding, I&apos;ve been using <b>GNU/Linux</b> since 2015, which has
+          given me a solid foundation in that area.
+        </motion.p>
+        <motion.p
+          className="text-md sm:text-2xl lg:text-2xl text-shadow-md"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.5 }}
+        >
+          Since May 2024, I&apos;ve been pursuing an <b>Associate Degree</b> in{" "}
+          <b>Programming</b> at the <b>Universidad Tecnológica Nacional</b>.
         </motion.p>
       </motion.div>
     </section>
