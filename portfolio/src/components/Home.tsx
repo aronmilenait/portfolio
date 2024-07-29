@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 
 export const Home = () => {
