@@ -1,74 +1,59 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-
-const socialLinks = [
-  {
-    name: "Github",
-    icon: <FaGithub />,
-    url: "https://github.com/aronmilenait",
-  },
-  {
-    name: "LinkedIn",
-    icon: <FaLinkedin />,
-    url: "https://www.linkedin.com/in/milenasaron/",
-  },
-];
-
-const socialLinksClassName =
-  "text-4xl sm:text-5xl lg:text-6xl text-pink-700 hover:text-pink-800 transition-colors duration-300";
+import Image from "next/image";
 
 export const Home = () => {
   return (
     <section
       id="home"
-      className="bg-gradient-to-r from-amber-100 to-pink-400 text-white p-20 md:p-32 flex flex-col justify-center items-center"
+      className="bg-gradient-to-r from-pink-300 via-pink-500 to-pink-700 text-white p-10 md:p-20 pt-24"
     >
-      <motion.div
-        className="text-center"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
-        <motion.h1
-          className="text-pink-700 text-4xl sm:text-5xl lg:text-6xl font-bold text-shadow-xl mb-4"
-          initial={{ opacity: 0, y: -20 }}
+      <div className="flex flex-col items-center space-y-10">
+        <motion.div
+          className="flex flex-col items-center text-center space-y-6"
+          initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          I&apos;m Milena Sol Aron
-        </motion.h1>
-        <motion.p
-          className="text-pink-600 text-xl sm:text-2xl lg:text-3xl font-bold text-shadow-md"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 }}
-        >
-          A Full-Stack Developer, creating stunning websites and efficient
-          back-end functionalities.
-        </motion.p>
-      </motion.div>
-
-      {/* Social Icons */}
-      <motion.div
-        className="flex gap-4 mt-8"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1.5 }}
-      >
-        {socialLinks.map((link, index) => (
-          <motion.a
-            key={index}
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={socialLinksClassName}
-            aria-label={link.name}
+          <motion.h1
+            className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-2 drop-shadow-lg"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
           >
-            {link.icon}
-          </motion.a>
-        ))}
-      </motion.div>
+            Hi! I&apos;m Milena Sol Aron
+          </motion.h1>
+          <motion.p
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white opacity-90"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            A Full-Stack Developer based in Argentina
+          </motion.p>
+        </motion.div>
+
+        <motion.div
+          className="relative flex flex-col items-center space-y-8"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+        >
+          <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-white shadow-xl">
+            <Image src="/myself.jpeg" alt="Photo of Milena Sol Aron" fill />
+          </div>
+
+          <motion.p
+            className="text-lg text-center sm:text-xl lg:text-2xl text-white opacity-90 px-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            With over a year of experience in the field, I follow the SOLID
+            principles and I&apos;m pursuing an Associate Degree in Programming.
+          </motion.p>
+        </motion.div>
+      </div>
     </section>
   );
 };

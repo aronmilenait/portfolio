@@ -20,15 +20,15 @@ const contactLinks = [
 ];
 
 const contactLinksClassName =
-  "text-4xl sm:text-5xl lg:text-6xl bg-gradient-to-r from-amber-300 to-pink-400 p-4 rounded-full hover:scale-110 transition-transform duration-300";
+  "text-4xl sm:text-5xl lg:text-6xl text-pink-800 bg-gradient-to-r from-pink-300 to-pink-100 p-4 rounded-full hover:scale-110 transition-transform duration-300";
 
 export const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-pink-600 text-white p-20 md:p-32 flex flex-col justify-center items-center"
+      className="bg-gradient-to-r from-pink-300 via-pink-500 to-pink-700 text-white p-20 md:p-32 flex flex-col justify-center items-center"
     >
-      <h6 className="text-amber-100 text-4xl sm:text-5xl lg:text-6xl font-bold mb-8">
+      <h6 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8">
         Contact
       </h6>
       <div className="flex gap-8 mb-8">
