@@ -21,7 +21,7 @@ export const Navbar = () => {
   return (
     <nav className="bg-gradient-to-r from-pink-200 via-pink-300 to-pink-500 text-pink-900 fixed top-0 left-0 w-full shadow-lg z-50 transition-transform duration-300 ease-in-out">
       <div className="flex justify-between items-center p-4 max-w-6xl mx-auto">
-        <p className="text-2xl sm:text-3xl lg:text-2xl font-bold tracking-wide hover:scale-110 transition-transform">
+        <p className="text-2xl sm:text-3xl lg:text-2xl font-bold">
           Milena S. Aron
         </p>
         <div className="sm:hidden">
