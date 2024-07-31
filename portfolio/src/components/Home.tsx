@@ -10,7 +10,7 @@ export const Home = () => {
     >
       <div className="flex flex-col items-center space-y-10">
         <motion.div
-          className="flex flex-col items-center text-center"
+          className="flex flex-col items-center text-center max-w-screen-md mx-auto"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -34,7 +34,7 @@ export const Home = () => {
         </motion.div>
 
         <motion.div
-          className="relative flex flex-col items-center space-y-8"
+          className="relative flex flex-col items-center space-y-8 max-w-screen-md mx-auto"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
@@ -44,7 +44,7 @@ export const Home = () => {
           </div>
 
           <motion.p
-            className="text-lg text-center sm:text-xl lg:text-2xl text-white opacity-90 px-4"
+            className="text-lg text-center sm:text-xl lg:text-2xl text-white opacity-90 px-4 max-w-screen-sm"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
