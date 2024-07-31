@@ -6,17 +6,17 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="bg-gradient-to-r from-pink-300 via-pink-500 to-pink-700 text-white p-10 md:p-20 pt-24"
+      className="bg-gradient-to-r from-pink-300 via-pink-500 to-pink-700 text-white p-10 md:p-20 pt-32 lg:p-32"
     >
       <div className="flex flex-col items-center space-y-10">
         <motion.div
-          className="flex flex-col items-center text-center space-y-6"
+          className="flex flex-col items-center text-center"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
           <motion.h1
-            className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-2 drop-shadow-lg"
+            className="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-white drop-shadow-lg mb-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -24,7 +24,7 @@ export const Home = () => {
             Hi! I&apos;m Milena Sol Aron
           </motion.h1>
           <motion.p
-            className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white opacity-90"
+            className="text-xl sm:text-3xl lg:text-3xl font-semibold text-white opacity-90"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
