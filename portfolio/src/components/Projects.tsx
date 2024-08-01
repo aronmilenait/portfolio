@@ -18,25 +18,21 @@ export const Projects = () => {
         Projects
       </motion.h5>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projectsData.map((project, index) => (
           <div
             key={index}
-            className="relative bg-gradient-to-br from-pink-200 to-pink-300 text-pink-700 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105"
+            className="relative bg-gradient-to-br from-pink-200 to-pink-300 text-pink-700 p-6 rounded-lg shadow-lg"
           >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-              className="mb-4 flex justify-center"
-            >
+            <div className="mb-4 flex justify-center">
               <Image
                 src={project.image}
                 alt={project.name}
                 width={project.width}
                 height={project.height}
-                className="rounded-md shadow-md w-full h-auto"
+                className="rounded-md shadow-md w-full h-auto hover:scale-105 transition-transform duration-300"
               />
-            </motion.div>
+            </div>
             <div className="flex flex-col items-center">
               <h3 className="text-2xl font-bold mb-2 text-center">
                 {project.name}
