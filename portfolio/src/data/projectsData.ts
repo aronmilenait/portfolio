@@ -10,6 +10,15 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
+    name: "AstroLife",
+    description: "Use the Drake Equation to calculate life probabilities.",
+    technologies: ["Python", "Flask", "Bootstrap"],
+    url: "https://calculate-astrolife.vercel.app/",
+    image: "/astrolife.webp",
+    width: 500,
+    height: 300,
+  },
+  {
     name: "Persephone",
     description:
       "Task management app with CRUD functions and input validation.",
