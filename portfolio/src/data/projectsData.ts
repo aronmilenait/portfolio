@@ -38,6 +38,15 @@ export const projectsData: Project[] = [
     height: 300,
   },
   {
+    name: "Personal blog",
+    description: "Random thoughts, software development and Linux.",
+    technologies: ["Jekyll"],
+    url: "https://aronmilenait.github.io/",
+    image: "/personal-blog.webp",
+    width: 500,
+    height: 300,
+  },
+  {
     name: "Linux System Manager",
     description: "Scripts to automate common system administration tasks.",
     technologies: ["Python", "Bash"],
