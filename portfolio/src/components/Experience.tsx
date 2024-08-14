@@ -18,6 +18,8 @@ import {
   SiExpress,
   SiVite,
   SiSqlite,
+  SiPhp,
+  SiCss3,
 } from "react-icons/si";
 
 export const Experience = () => {
@@ -28,6 +30,7 @@ export const Experience = () => {
   };
 
   const icons: { [key: string]: IconType[] } = {
+    bitbug: [SiPhp, SiJavascript, SiCss3],
     "Connect Nodes IO": [
       SiNodedotjs,
       SiExpress,
