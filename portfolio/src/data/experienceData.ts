@@ -8,10 +8,17 @@ export interface Experience {
 
 export const workExperience: Experience[] = [
   {
+    company: "bitbug",
+    location: "Miami, USA",
+    role: "Web Developer",
+    timeframe: "August 2024 - Present",
+    responsibilities: ["Development of web applications using PHP, JavaScript, and CSS."],
+  },
+  {
     company: "Connect Nodes IO",
     location: "Miami, USA",
     role: "Back End Developer",
-    timeframe: "July 2024 - Present",
+    timeframe: "July 2024 - August 2024 (Temporary Contract)",
     responsibilities: [
       "Development of back-end services using Express.js and SQLite with JavaScript and TypeScript.",
       "Efficient web scraping implementation with Puppeteer, improving the quality and speed of collected data.",
