@@ -2,14 +2,11 @@
 import { useState } from "react";
 import { workExperience } from "../data/experienceData";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import { IconType } from "react-icons";
 import {
   SiNodedotjs,
   SiPuppeteer,
   SiReact,
   SiDocker,
-  SiWordpress,
-  SiWebflow,
   SiTypescript,
   SiJavascript,
   SiTailwindcss,
@@ -21,6 +18,7 @@ import {
   SiPhp,
   SiCss3,
 } from "react-icons/si";
+import { IconType } from "react-icons";
 
 export const Experience = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
@@ -46,8 +44,6 @@ export const Experience = () => {
       SiDocker,
       SiMysql,
       SiNestjs,
-      SiWordpress,
-      SiWebflow,
       SiVite,
     ],
   };
@@ -81,14 +77,19 @@ export const Experience = () => {
             onClick={() => toggleExpand(index)}
           >
             <div>
-              <h4 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">
-                {experience.role}
-              </h4>
-              <h5 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4">
-                {experience.company}
-              </h5>
-              <p className="text-md sm:text-lg lg:text-xl font-bold mb-4">
-                {experience.timeframe}
+              <p className="text-2xl sm:text-3xl lg:text-3xl font-bold mb-2">
+                {experience.role} at{" "}
+                <a
+                  href={experience.companyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-pink-200 hover:text-pink-400 underline transition-colors duration-300" 
+                >
+                  {experience.company}
+                </a>
+              </p>
+              <p className="text-md sm:text-lg lg:text-xl font-medium mb-4">
+                {experience.timeframe} | {experience.location}
               </p>
               <div className="flex flex-wrap items-center">
                 {technologyIcons(experience.company)}
@@ -103,13 +104,15 @@ export const Experience = () => {
             </div>
           </div>
           {expandedIndex === index && (
-            <ul className="list-disc list-inside space-y-2 mt-4">
-              {experience.responsibilities.map((responsibility, idx) => (
-                <li key={idx} className="ml-4 text-md sm:text-lg lg:text-xl">
-                  {responsibility}
-                </li>
-              ))}
-            </ul>
+            <div className="mt-4">
+              <ul className="list-disc list-inside space-y-2">
+                {experience.responsibilities.map((responsibility, idx) => (
+                  <li key={idx} className="ml-4 text-md sm:text-lg lg:text-xl">
+                    {responsibility}
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </div>
       ))}
