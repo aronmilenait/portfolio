@@ -1,13 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import {
-  FaGithub,
-  FaLinux,
-  FaReact,
-  FaDocker,
-  FaPython,
-  FaNode,
-} from "react-icons/fa";
+import { FaGithub, FaLinux, FaReact, FaDocker, FaNode } from "react-icons/fa";
 import {
   SiJavascript,
   SiTypescript,
@@ -24,7 +17,6 @@ import {
 const skills = [
   { name: "JavaScript", icon: <SiJavascript /> },
   { name: "TypeScript", icon: <SiTypescript /> },
-  { name: "Python", icon: <FaPython /> },
   { name: "React", icon: <FaReact /> },
   { name: "Next.js", icon: <SiNextdotjs /> },
   { name: "Express.js", icon: <SiExpress /> },
@@ -52,7 +44,7 @@ export const Skills = () => {
       <h4 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-12">
         Skills
       </h4>
-      <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-* gap-8">
+      <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-* gap-8">
         {skills.map((skill, index) => (
           <motion.div
             key={index}
