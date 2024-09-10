@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
 export const Home = () => {
   return (
     <section
@@ -21,7 +20,7 @@ export const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Hi! I&apos;m Milena Sol Aron
+            Milena Sol Aron
           </motion.h1>
           <motion.p
             className="text-xl sm:text-3xl lg:text-3xl font-semibold text-white opacity-90"
@@ -29,7 +28,7 @@ export const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            A Full-Stack Developer based in Argentina
+            Software Developer
           </motion.p>
         </motion.div>
 
@@ -42,16 +41,6 @@ export const Home = () => {
           <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-white shadow-xl">
             <Image src="/myself.jpeg" alt="Photo of Milena Sol Aron" fill />
           </div>
-
-          <motion.p
-            className="text-lg text-center sm:text-xl lg:text-2xl text-white opacity-90 px-4 max-w-screen-sm"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-          >
-            With over a year of experience in the field, I follow the SOLID
-            principles and I&apos;m pursuing an Associate Degree in Programming.
-          </motion.p>
         </motion.div>
       </div>
     </section>
