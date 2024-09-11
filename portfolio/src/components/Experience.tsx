@@ -17,6 +17,7 @@ import {
   SiSqlite,
   SiPhp,
   SiCss3,
+  SiNextdotjs,
 } from "react-icons/si";
 import { IconType } from "react-icons";
 
@@ -28,6 +29,7 @@ export const Experience = () => {
   };
 
   const icons: { [key: string]: IconType[] } = {
+    CarreraIT: [SiTypescript, SiNextdotjs, SiReact, SiTailwindcss],
     bitbug: [SiPhp, SiJavascript, SiCss3],
     "Connect Nodes IO": [
       SiNodedotjs,
