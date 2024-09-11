@@ -10,6 +10,15 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
+    name: "CarreraIT",
+    description: "Discover your career path in tech.",
+    technologies: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+    url: "https://carrerait.vercel.app/",
+    image: "/carrerait.webp",
+    width: 500,
+    height: 300,
+  },
+  {
     name: "AstroLife",
     description: "Use the Drake Equation to calculate life probabilities.",
     technologies: ["Python", "Flask", "Bootstrap"],
@@ -38,29 +47,11 @@ export const projectsData: Project[] = [
     height: 300,
   },
   {
-    name: "Personal blog",
-    description: "Random thoughts, software development and Linux.",
-    technologies: ["Jekyll"],
-    url: "https://aronmilenait.github.io/",
-    image: "/personal-blog.webp",
-    width: 500,
-    height: 300,
-  },
-  {
     name: "Linux System Manager",
     description: "Scripts to automate common system administration tasks.",
     technologies: ["Python", "Bash"],
     url: "https://github.com/aronmilenait/deb-linux-system-automation",
     image: "/linux-automation.webp",
-    width: 500,
-    height: 300,
-  },
-  {
-    name: "Switch to Linux",
-    description: "Website combining my passions for coding and GNU/Linux.",
-    technologies: ["TypeScript", "React", "Vite", "Tailwind CSS"],
-    url: "https://switchtolinux.vercel.app/",
-    image: "/switch-to-linux.webp",
     width: 500,
     height: 300,
   },
