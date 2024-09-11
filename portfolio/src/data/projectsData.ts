@@ -10,6 +10,15 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
+    name: "CarreraIT",
+    description: "Discover your career path in tech.",
+    technologies: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+    url: "https://carrerait.vercel.app/",
+    image: "/carrerait.webp",
+    width: 500,
+    height: 300,
+  },
+  {
     name: "AstroLife",
     description: "Use the Drake Equation to calculate life probabilities.",
     technologies: ["Python", "Flask", "Bootstrap"],
