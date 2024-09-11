@@ -8,6 +8,18 @@ import {
   FaUniversity,
 } from "react-icons/fa";
 
+const fadeInUp = {
+  initial: { opacity: 0, y: -50 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 1, delay: 0.5 },
+};
+
+const fadeIn = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 1, delay: 1 },
+};
+
 export const Home = () => {
   return (
     <section
@@ -17,23 +29,17 @@ export const Home = () => {
       <div className="flex flex-col items-center space-y-10">
         <motion.div
           className="flex flex-col items-center text-center max-w-screen-md mx-auto"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
+          {...fadeInUp}
         >
           <motion.h1
             className="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-white drop-shadow-lg mb-4"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            {...fadeInUp}
           >
             Milena Sol Aron
           </motion.h1>
           <motion.p
             className="text-xl sm:text-3xl lg:text-3xl font-semibold text-white opacity-90"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
+            {...fadeIn}
           >
             Software Developer
           </motion.p>
@@ -51,9 +57,7 @@ export const Home = () => {
         </motion.div>
         <motion.div
           className="text-xl mt-12 text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-* gap-8"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2 }}
+          {...fadeIn}
         >
           <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col items-center">
             <FaMapMarkedAlt className="text-3xl text-white mb-4" />
