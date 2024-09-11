@@ -7,6 +7,7 @@ import {
   FaMapMarkedAlt,
   FaUniversity,
 } from "react-icons/fa";
+import AboutCard from "./AboutCard";
 
 const fadeInUp = {
   initial: { opacity: 0, y: -50 },
@@ -55,46 +56,41 @@ export const Home = () => {
             <Image src="/myself.jpeg" alt="Photo of Milena Sol Aron" fill />
           </div>
         </motion.div>
+
         <motion.div
-          className="text-xl mt-12 text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-* gap-8"
+          className="text-xl mt-12 text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8"
           {...fadeIn}
         >
-          <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col items-center">
-            <FaMapMarkedAlt className="text-3xl text-white mb-4" />
-            <p className="text-lg text-white font-semibold">
-              Based in Buenos Aires, Argentina. <br></br>
-              My native language is Spanish, and my English proficiency is C2.
-            </p>
-          </div>
-          <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col items-center">
-            <FaPencilAlt className="text-3xl text-white mb-4" />
-            <p className="text-lg text-white font-semibold">
-              Developer and founder of{" "}
-              <a
-                href="https://carrerait.vercel.app"
-                className="underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CarreraIT
-              </a>
-              , which intends to to help individuals from Hispanic countries
-              discover their career paths in the tech field.
-            </p>
-          </div>
-          <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col items-center">
-            <FaUniversity className="text-3xl text-white mb-4" />
-            <p className="text-lg text-white font-semibold">
-              Pursuing an Associate&apos;s Degree in Programming at Universidad
-              Tecnológica Nacional.
-            </p>
-          </div>
-          <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col items-center">
-            <FaBook className="text-3xl text-white mb-4" />
-            <p className="text-lg text-white font-semibold">
-              Currently learning AWS and C++.
-            </p>
-          </div>
+          <AboutCard
+            icon={<FaMapMarkedAlt className="text-3xl text-white mb-4" />}
+            text="Based in Buenos Aires, Argentina. My native language is Spanish, and my English proficiency is C2."
+          />
+          <AboutCard
+            icon={<FaPencilAlt className="text-3xl text-white mb-4" />}
+            text={
+              <>
+                Developer and founder of{" "}
+                <a
+                  href="https://carrerait.vercel.app"
+                  className="underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CarreraIT
+                </a>
+                , which helps individuals from Hispanic countries discover their
+                career paths in tech.
+              </>
+            }
+          />
+          <AboutCard
+            icon={<FaUniversity className="text-3xl text-white mb-4" />}
+            text="Pursuing an Associate's Degree in Programming at Universidad Tecnológica Nacional."
+          />
+          <AboutCard
+            icon={<FaBook className="text-3xl text-white mb-4" />}
+            text="Currently learning AWS and C++."
+          />
         </motion.div>
       </div>
     </section>
