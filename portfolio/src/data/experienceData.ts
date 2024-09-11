@@ -27,7 +27,8 @@ export const workExperience: Experience[] = [
     role: "Full Stack Developer",
     timeframe: "August 2024 - Present",
     responsibilities: [
-      "Development of web applications using PHP, JavaScript, and CSS.",
+      "Back-end development using PHP.",
+      "Front-end development using HTML, CSS and JavaScript.",
     ],
     companyUrl: "https://www.linkedin.com/company/bitbug/",
   },
