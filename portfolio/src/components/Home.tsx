@@ -1,7 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaBook, FaPencilAlt, FaMapMarkedAlt } from "react-icons/fa";
+import {
+  FaBook,
+  FaPencilAlt,
+  FaMapMarkedAlt,
+  FaUniversity,
+} from "react-icons/fa";
 
 export const Home = () => {
   return (
@@ -45,7 +50,7 @@ export const Home = () => {
           </div>
         </motion.div>
         <motion.div
-          className="text-xl mt-12 text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="text-xl mt-12 text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-* gap-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 2 }}
@@ -74,10 +79,16 @@ export const Home = () => {
             </p>
           </div>
           <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col items-center">
-            <FaBook className="text-3xl text-white mb-4" />
+            <FaUniversity className="text-3xl text-white mb-4" />
             <p className="text-lg text-white font-semibold">
               Pursuing an Associate&apos;s Degree in Programming at Universidad
               Tecnológica Nacional.
+            </p>
+          </div>
+          <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col items-center">
+            <FaBook className="text-3xl text-white mb-4" />
+            <p className="text-lg text-white font-semibold">
+              Currently learning AWS and C++.
             </p>
           </div>
         </motion.div>
