@@ -19,18 +19,6 @@ export const workExperience: Experience[] = [
     companyUrl: "https://www.linkedin.com/company/bitbug/",
   },
   {
-    company: "Connect Nodes IO",
-    location: "Miami, USA (Remote)",
-    role: "Back End Developer",
-    timeframe: "July 2024 - August 2024 (Temporary Contract)",
-    responsibilities: [
-      "Development of back-end services using Express.js and SQLite with JavaScript and TypeScript.",
-      "Efficient web scraping implementation with Puppeteer.",
-      "Management of API requests using Postman for testing and documentation.",
-    ],
-    companyUrl: "https://connectnodes.io/",
-  },
-  {
     company: "Bigger",
     location: "Sydney, Australia (Remote)",
     role: "Web Developer",
