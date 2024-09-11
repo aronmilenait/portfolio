@@ -9,26 +9,28 @@ export interface Experience {
 
 export const workExperience: Experience[] = [
   {
+    company: "CarreraIT",
+    location: "Argentina",
+    role: "Full Stack Developer",
+    timeframe: "September 2024 - Present",
+    responsibilities: [
+      "CarreraIT is a platform I created as a personal project to help individuals from Hispanic countries discover their career paths in the tech field. It offers free, high-quality resources, career orientation guides, and a survey that provides personalized recommendations based on their responses.",
+      "Develop the platform using Next.js, TypeScript, React.js, and Tailwind CSS.",
+      "Write orientation guides in Spanish, my native language.",
+      "Search and incorporate for high-quality, free resources.",
+    ],
+    companyUrl: "https://carrerait.vercel.app",
+  },
+  {
     company: "bitbug",
     location: "Miami, USA (Remote)",
     role: "Full Stack Developer",
     timeframe: "August 2024 - Present",
     responsibilities: [
-      "Development of web applications using PHP, JavaScript, and CSS.",
+      "Back-end development using PHP.",
+      "Front-end development using HTML, CSS and JavaScript.",
     ],
     companyUrl: "https://www.linkedin.com/company/bitbug/",
-  },
-  {
-    company: "Connect Nodes IO",
-    location: "Miami, USA (Remote)",
-    role: "Back End Developer",
-    timeframe: "July 2024 - August 2024 (Temporary Contract)",
-    responsibilities: [
-      "Development of back-end services using Express.js and SQLite with JavaScript and TypeScript.",
-      "Efficient web scraping implementation with Puppeteer.",
-      "Management of API requests using Postman for testing and documentation.",
-    ],
-    companyUrl: "https://connectnodes.io/",
   },
   {
     company: "Bigger",

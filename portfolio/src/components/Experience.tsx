@@ -17,6 +17,7 @@ import {
   SiSqlite,
   SiPhp,
   SiCss3,
+  SiNextdotjs,
 } from "react-icons/si";
 import { IconType } from "react-icons";
 
@@ -28,15 +29,8 @@ export const Experience = () => {
   };
 
   const icons: { [key: string]: IconType[] } = {
+    CarreraIT: [SiTypescript, SiNextdotjs, SiReact, SiTailwindcss],
     bitbug: [SiPhp, SiJavascript, SiCss3],
-    "Connect Nodes IO": [
-      SiNodedotjs,
-      SiExpress,
-      SiTypescript,
-      SiJavascript,
-      SiPuppeteer,
-      SiSqlite,
-    ],
     Bigger: [
       SiTypescript,
       SiReact,
@@ -83,7 +77,7 @@ export const Experience = () => {
                   href={experience.companyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-pink-200 hover:text-pink-400 underline transition-colors duration-300" 
+                  className="text-pink-200 hover:text-pink-400 underline transition-colors duration-300"
                 >
                   {experience.company}
                 </a>
