@@ -9,6 +9,9 @@ import {
 } from "react-icons/fa";
 import AboutCard from "./AboutCard";
 import { fadeInUp, fadeIn } from "../utils/MotionAnimations";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 
 export const Home = () => {
   return (
@@ -22,13 +25,13 @@ export const Home = () => {
           {...fadeInUp}
         >
           <motion.h1
-            className="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-white drop-shadow-lg mb-4"
+            className={`${playfair.className} text-3xl sm:text-5xl lg:text-5xl font-extrabold text-white drop-shadow-lg mb-4`}
             {...fadeInUp}
           >
             Milena Sol Aron
           </motion.h1>
           <motion.p
-            className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-white drop-shadow-lg"
+            className={`${playfair.className} text-2xl sm:text-3xl lg:text-5xl font-semibold text-white drop-shadow-lg`}
             {...fadeIn}
           >
             Software Developer
