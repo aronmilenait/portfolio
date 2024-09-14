@@ -28,7 +28,7 @@ export const Home = () => {
             Milena Sol Aron
           </motion.h1>
           <motion.p
-            className="text-xl sm:text-3xl lg:text-3xl font-semibold text-white opacity-90"
+            className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-white drop-shadow-lg"
             {...fadeIn}
           >
             Software Developer
