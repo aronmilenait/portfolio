@@ -52,11 +52,11 @@ export const Home = () => {
           {...fadeIn}
         >
           <AboutCard
-            icon={<FaMapMarkedAlt className="text-3xl text-white mb-4" />}
+            icon={<FaMapMarkedAlt className="text-3xl text-pink-800 mb-4" />}
             text="Based in Buenos Aires, Argentina. My native language is Spanish, and my English proficiency is C2."
           />
           <AboutCard
-            icon={<FaPencilAlt className="text-3xl text-white mb-4" />}
+            icon={<FaPencilAlt className="text-3xl text-pink-800 mb-4" />}
             text={
               <>
                 Developer and founder of{" "}
@@ -74,11 +74,11 @@ export const Home = () => {
             }
           />
           <AboutCard
-            icon={<FaUniversity className="text-3xl text-white mb-4" />}
+            icon={<FaUniversity className="text-3xl text-pink-800 mb-4" />}
             text="Pursuing an Associate's Degree in Programming at Universidad Tecnológica Nacional."
           />
           <AboutCard
-            icon={<FaBook className="text-3xl text-white mb-4" />}
+            icon={<FaBook className="text-3xl text-pink-800 mb-4" />}
             text="Currently learning AWS and C++."
           />
         </motion.div>

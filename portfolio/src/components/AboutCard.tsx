@@ -6,9 +6,9 @@ interface AboutCardProps {
 }
 
 const AboutCard = ({ icon, text }: AboutCardProps) => (
-  <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col items-center">
+  <div className="max-w-lg text-pink-800 bg-pink-100 bg-opacity-70 p-6 rounded-lg border-2 border-pink-500 shadow-lg flex flex-col items-center">
     {icon}
-    <p className="text-lg text-white font-semibold">{text}</p>
+    <p className="text-lg font-semibold">{text}</p>
   </div>
 );
 
