@@ -34,17 +34,18 @@ export const Home = () => {
             Software Developer
           </motion.p>
         </motion.div>
-
+        {/*
         <motion.div
           className="relative flex flex-col items-center space-y-8 max-w-screen-md mx-auto"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
         >
-          <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-white shadow-xl">
-            <Image src="/myself.jpeg" alt="Photo of Milena Sol Aron" fill />
+          <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-72 lg:h-72 overflow-hidden">
+            <Image src="/myself.png" alt="Photo of Milena Sol Aron" fill />
           </div>
         </motion.div>
+        */}
 
         <motion.div
           className="text-xl mt-12 text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8"
