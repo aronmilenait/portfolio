@@ -44,14 +44,6 @@ export const Contact = () => {
           </a>
         ))}
       </div>
-      {/* <a
-        href="https://bloglinkthatihaventdefinedyet"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-pink-500 text-pink-50 px-6 py-3 rounded-lg text-lg font-bold hover:bg-pink-700 transition-colors duration-300"
-      >
-        Check My Blog
-      </a> */}
     </section>
   );
 };
