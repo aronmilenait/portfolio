@@ -3,8 +3,6 @@ import { useState } from "react";
 import { workExperience } from "../data/experienceData";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import {
-  SiNodedotjs,
-  SiPuppeteer,
   SiReact,
   SiDocker,
   SiTypescript,
@@ -20,6 +18,9 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 import { IconType } from "react-icons";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 
 export const Experience = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
@@ -58,7 +59,7 @@ export const Experience = () => {
       id="experience"
       className="bg-white text-pink-700 flex flex-col items-center p-10 md:p-20 lg:p-32"
     >
-      <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-12">
+      <h3 className={`${playfair.className} text-4xl sm:text-5xl lg:text-6xl font-bold mb-12`}>
         Experience
       </h3>
       {workExperience.map((experience, index) => (
@@ -71,7 +72,7 @@ export const Experience = () => {
             onClick={() => toggleExpand(index)}
           >
             <div>
-              <p className="text-2xl sm:text-3xl lg:text-3xl font-bold mb-2">
+              <p className={`${playfair.className} text-2xl sm:text-3xl lg:text-3xl font-bold mb-2`}>
                 {experience.role} at{" "}
                 <a
                   href={experience.companyUrl}
