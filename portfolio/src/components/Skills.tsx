@@ -13,6 +13,9 @@ import {
   SiNestjs,
   SiGnubash,
 } from "react-icons/si";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 
 const skills = [
   { name: "JavaScript", icon: <SiJavascript /> },
@@ -40,7 +43,9 @@ export const Skills = () => {
       id="skills"
       className="bg-gradient-to-r from-pink-300 via-pink-500 to-pink-700 text-white p-10 md:p-20 lg:p-32 flex flex-col justify-center items-center"
     >
-      <h4 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-12">
+      <h4
+        className={`${playfair.className} text-4xl sm:text-5xl lg:text-6xl font-bold mb-12`}
+      >
         Skills
       </h4>
       <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-* gap-8">
