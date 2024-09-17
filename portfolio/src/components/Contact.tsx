@@ -1,5 +1,8 @@
 "use client";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 
 const contactLinks = [
   {
@@ -28,7 +31,9 @@ export const Contact = () => {
       id="contact"
       className="bg-gradient-to-r from-pink-300 via-pink-500 to-pink-700 text-white p-20 md:p-32 flex flex-col justify-center items-center"
     >
-      <h6 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8">
+      <h6
+        className={`${playfair.className} text-4xl sm:text-5xl lg:text-6xl font-bold mb-8`}
+      >
         Contact
       </h6>
       <div className="flex gap-8 mb-8">
