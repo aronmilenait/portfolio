@@ -2,6 +2,9 @@
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Playfair_Display } from "next/font/google";
+
+const playful = Playfair_Display({ subsets: ["latin"] });
 
 export const Projects = () => {
   return (
@@ -10,7 +13,7 @@ export const Projects = () => {
       className="bg-white text-pink-700 p-10 md:p-20 lg:p-32 relative overflow-hidden"
     >
       <motion.h5
-        className="text-pink-700 text-4xl sm:text-5xl lg:text-6xl font-bold text-shadow-xl mb-12 text-center"
+        className={`${playful.className} text-pink-700 text-4xl sm:text-5xl lg:text-6xl font-bold text-shadow-xl mb-12 text-center`}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -34,9 +37,9 @@ export const Projects = () => {
               />
             </div>
             <div className="flex flex-col items-center">
-              <h3 className="text-2xl font-bold mb-2 text-center">
+              <p className="text-2xl font-bold mb-2 text-center">
                 {project.name}
-              </h3>
+              </p>
               <p className="text-md mb-4 text-center">{project.description}</p>
               <div className="flex flex-wrap justify-center gap-2 mb-4">
                 {project.technologies.map((tech, idx) => (
