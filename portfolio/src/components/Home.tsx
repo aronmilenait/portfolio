@@ -62,7 +62,7 @@ export const Home = () => {
             icon={<FaPencilAlt className="text-3xl text-pink-800 mb-4" />}
             text={
               <>
-                Developer and founder of{" "}
+                Founder of{" "}
                 <a
                   href="https://carrerait.vercel.app"
                   className="underline"
@@ -71,7 +71,7 @@ export const Home = () => {
                 >
                   CarreraIT
                 </a>
-                , which helps individuals from Hispanic countries discover their
+                , which helps people from Hispanic countries discover their
                 career paths in tech.
               </>
             }
@@ -82,7 +82,7 @@ export const Home = () => {
           />
           <AboutCard
             icon={<FaBook className="text-3xl text-pink-800 mb-4" />}
-            text="Currently learning AWS and C++."
+            text="Currently learning AWS Cloud and Software Architecture."
           />
         </motion.div>
       </div>
