@@ -85,6 +85,14 @@ export const Home = () => {
             text="Currently learning AWS Cloud and Software Architecture."
           />
         </motion.div>
+        <div className="mt-4 flex justify-center">
+          <a
+            href="/resume"
+            className="bg-pink-800 text-white text-xl p-4 rounded-md hover:bg-pink-700 transition-colors duration-300"
+          >
+            View my resume
+          </a>
+        </div>
       </div>
     </section>
   );
