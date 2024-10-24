@@ -12,8 +12,8 @@ export const Navbar = () => {
     { name: "Experience", href: "/#experience" },
     { name: "Skills", href: "/#skills" },
     { name: "Projects", href: "/#projects" },
-    { name: "Contact", href: "/#contact" },
     { name: "Resume", href: "/resume" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   const linkClasses =
