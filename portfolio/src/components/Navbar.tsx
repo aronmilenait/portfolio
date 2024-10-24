@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export const Navbar = () => {
@@ -8,12 +9,12 @@ export const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Experience", href: "#experience" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
-    { name: "Resume", href:"/resume"}
+    { name: "Home", href: "/" },
+    { name: "Experience", href: "/#experience" },
+    { name: "Skills", href: "/#skills" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Contact", href: "/#contact" },
+    { name: "Resume", href: "/resume" },
   ];
 
   const linkClasses =
@@ -36,11 +37,9 @@ export const Navbar = () => {
         </div>
         <ul className="hidden sm:flex gap-6 sm:gap-8 lg:gap-10 text-lg sm:text-xl lg:text-2xl">
           {navLinks.map((link, index) => (
-            <li key={index} className="relative group">
-              <a href={link.href} className={linkClasses}>
-                {link.name}
-              </a>
-            </li>
+           <Link key={link.name} href={link.href} className={linkClasses}>
+           {link.name}
+         </Link>
           ))}
         </ul>
       </div>
