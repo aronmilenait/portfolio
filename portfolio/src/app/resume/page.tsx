@@ -1,5 +1,5 @@
 export default function About() {
-  const paragraphClasses = "text-lg md:text-xl leading-relaxed";
+  const paragraphClasses = "font-medium text-lg md:text-xl leading-relaxed";
   const titleClasses = "font-bold text-3xl md:text-3xl mb-2 text-pink-900";
   const jobTitleClasses = "font-bold text-2xl md:text-2xl text-pink-700 mt-4";
   const jobRoleClasses = "font-bold text-2xl md:text-2xl text-pink-800 mb-2";
@@ -7,8 +7,8 @@ export default function About() {
   const responsibilityClasses = "font-medium text-lg md:text-lg mt-4";
 
   return (
-    <section className="mt-8 bg-gradient-to-r from-orange-50 to-pink-100 flex flex-col justify-center items-center p-4 text-pink-900">
-      <h1 className="font-bold text-4xl md:text-6xl m-8">My Resume</h1>
+    <section className="mt-8 bg-gradient-to-r from-pink-400 via-pink-300 to-pink-400 flex flex-col justify-center items-center p-4 text-pink-900">
+      <h1 className="font-bold text-pink-800 text-4xl md:text-6xl m-8">My Resume</h1>
       <div className="space-y-6 max-w-2xl bg-white p-8 rounded-xl shadow-md">
         {/* About */}
         <p className={paragraphClasses}>
