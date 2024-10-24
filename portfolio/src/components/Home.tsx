@@ -36,6 +36,15 @@ export const Home = () => {
           >
             Software Developer
           </motion.p>
+          <div className="mt-8 flex justify-center">
+          <a
+  href="/resume"
+  className="bg-gradient-to-r from-pink-600 to-pink-800 text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-l from-pink-800 to-pink-600"
+>
+  View my resume
+</a>
+
+          </div>
         </motion.div>
         {/*
         <motion.div
@@ -50,7 +59,7 @@ export const Home = () => {
         </motion.div>
         */}
 
-       {/* <motion.div
+        {/* <motion.div
           className="text-xl mt-12 text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8"
           {...fadeIn}
         >
@@ -85,14 +94,6 @@ export const Home = () => {
             text="Currently learning AWS Cloud and Software Architecture."
           />
         </motion.div> */}
-        <div className="mt-4 flex justify-center">
-          <a
-            href="/resume"
-            className="bg-pink-800 text-white text-xl p-4 rounded-md hover:bg-pink-700 transition-colors duration-300"
-          >
-            View my resume
-          </a>
-        </div>
       </div>
     </section>
   );
