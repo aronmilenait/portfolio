@@ -31,19 +31,25 @@ export const Home = () => {
             Milena Sol Aron
           </motion.h1>
           <motion.p
-            className={`${playfair.className} text-2xl sm:text-3xl lg:text-5xl font-semibold text-white drop-shadow-lg`}
+            className={`${playfair.className} text-2xl sm:text-3xl lg:text-4xl font-semibold text-white drop-shadow-lg`}
             {...fadeIn}
           >
-            Software Developer
+            Software Developer and Founder of{" "}
+            <a
+              className="font-bold text-pink-300 hover:text-pink-600 hover:bg-pink-100 transition-colors duration-300 rounded-md px-1"
+              href="https://www.carrerait.lat/"
+              target="_blank"
+            >
+              CarreraIT
+            </a>
           </motion.p>
           <div className="mt-8 flex justify-center">
-          <a
-  href="/resume"
-  className="bg-gradient-to-r from-pink-600 to-pink-800 text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-l from-pink-800 to-pink-600"
->
-  View my resume
-</a>
-
+            <a
+              href="/resume"
+              className="bg-gradient-to-r from-pink-600 to-pink-800 text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-l from-pink-800 to-pink-600"
+            >
+              View my resume
+            </a>
           </div>
         </motion.div>
         {/*
