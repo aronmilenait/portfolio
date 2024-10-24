@@ -7,7 +7,7 @@ export default function About() {
   const responsibilityClasses = "font-medium text-lg md:text-lg mt-4";
 
   return (
-    <section className="bg-gradient-to-r from-orange-50 to-pink-100 flex flex-col justify-center items-center p-4 text-pink-900">
+    <section className="mt-8 bg-gradient-to-r from-orange-50 to-pink-100 flex flex-col justify-center items-center p-4 text-pink-900">
       <h1 className="font-bold text-4xl md:text-6xl m-8">My Resume</h1>
       <div className="space-y-6 max-w-2xl bg-white p-8 rounded-xl shadow-md">
         {/* About */}
