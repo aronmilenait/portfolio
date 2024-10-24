@@ -12,8 +12,8 @@ export default function About() {
       <div className="space-y-6 max-w-2xl bg-white p-8 rounded-xl shadow-md">
         {/* About */}
         <p className={paragraphClasses}>
-          I’m a Software Developer with over a year of work experience in the
-          field.
+          I&apos;m a Software Developer with over a year of work experience in
+          the field.
         </p>
         <p className={paragraphClasses}>
           Besides coding, I&apos;ve been using GNU/Linux as my operating system
@@ -30,7 +30,7 @@ export default function About() {
           {/* Founder at CarreraIT */}
 
           <p className={jobTitleClasses}>CarreraIT</p>
-          <p className={jobRoleClasses}>Founderc</p>
+          <p className={jobRoleClasses}>Founder</p>
           <p className={timelineClasses}>(September 2024 - Present)</p>
           <p className="font-medium text-lg md:text-lg mt-4">
             My love for the field led me to create and develop CarreraIT, a
