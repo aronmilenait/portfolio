@@ -1,12 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import {
-  FaBook,
-  FaPencilAlt,
-  FaMapMarkedAlt,
-  FaUniversity,
-} from "react-icons/fa";
+import { FaBook, FaUniversity } from "react-icons/fa";
+import { FaEarthAmericas } from "react-icons/fa6";
 import AboutCard from "./AboutCard";
 import { fadeInUp, fadeIn } from "../utils/MotionAnimations";
 import { Playfair_Display } from "next/font/google";
@@ -64,42 +60,23 @@ export const Home = () => {
           </div>
         </motion.div>
         */}
-
-        {/* <motion.div
-          className="text-xl mt-12 text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8"
+        <motion.div
+          className="text-xl mt-12 text-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8"
           {...fadeIn}
         >
           <AboutCard
-            icon={<FaMapMarkedAlt className="text-3xl text-pink-800 mb-4" />}
-            text="Based in Buenos Aires, Argentina. My native language is Spanish, and my English proficiency is C2."
-          />
-          <AboutCard
-            icon={<FaPencilAlt className="text-3xl text-pink-800 mb-4" />}
-            text={
-              <>
-                Founder of{" "}
-                <a
-                  href="https://carrerait.vercel.app"
-                  className="underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  CarreraIT
-                </a>
-                , which helps people from Hispanic countries discover their
-                career paths in tech.
-              </>
-            }
+            icon={<FaEarthAmericas className="text-3xl text-pink-800 mb-4" />}
+            text="Based in Buenos Aires, Argentina, with C2-level English proficiency."
           />
           <AboutCard
             icon={<FaUniversity className="text-3xl text-pink-800 mb-4" />}
-            text="Pursuing an Associate's Degree in Programming at Universidad Tecnológica Nacional."
+            text="Studying a self-taught path in Computer Science at Open Source Society University"
           />
           <AboutCard
             icon={<FaBook className="text-3xl text-pink-800 mb-4" />}
-            text="Currently learning AWS Cloud and Software Architecture."
+            text="In my free time, I&apos;m learning Software Architecture."
           />
-        </motion.div> */}
+        </motion.div>
       </div>
     </section>
   );
