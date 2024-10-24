@@ -50,7 +50,7 @@ export const Home = () => {
         </motion.div>
         */}
 
-        <motion.div
+       {/* <motion.div
           className="text-xl mt-12 text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8"
           {...fadeIn}
         >
@@ -84,7 +84,7 @@ export const Home = () => {
             icon={<FaBook className="text-3xl text-pink-800 mb-4" />}
             text="Currently learning AWS Cloud and Software Architecture."
           />
-        </motion.div>
+        </motion.div> */}
         <div className="mt-4 flex justify-center">
           <a
             href="/resume"
