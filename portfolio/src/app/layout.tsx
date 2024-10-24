@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 
@@ -16,9 +18,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={quicksand.className}>{children}</body>
-      <Analytics />
+    <html lang="en" className={quicksand.className}>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+        <Analytics />
+      </body>
     </html>
   );
 }
