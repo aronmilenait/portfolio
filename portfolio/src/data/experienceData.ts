@@ -18,18 +18,19 @@ export const workExperience: Experience[] = [
       "Developing the platform using Next.js, TypeScript, React.js, and Tailwind CSS, adhering to SOLID principles and focusing on building a maintainable architecture.",
       "Handling deployment through Vercel.",
       "Writing orientation guides and creating surveys.",
-      "Searching and incorporating high-quality, free resources."
+      "Searching and incorporating high-quality, free resources.",
     ],
     companyUrl: "https://carrerait.lat",
   },
   {
     company: "bitbug",
-    location: "Miami, USA (Remote)",
+    location: "United States (Remote)",
     role: "Full Stack Developer",
     timeframe: "August 2024 - Present",
     responsibilities: [
-      "Back-end development using PHP.",
-      "Front-end development using HTML, CSS and JavaScript.",
+      "Participate in developing an AI platform using PHP, JavaScript, HTML, and CSS.",
+      "Create and manage tickets to organize my work using Trello and follow Scrum and Agile methodologies.",
+      "Writing documentation on best development practices to ensure high-quality code, and maintaining documentation for existing projects to help new developers adapt quickly and understand the reasoning behind the implementation.",
     ],
     companyUrl: "https://www.linkedin.com/company/bitbug/",
   },
