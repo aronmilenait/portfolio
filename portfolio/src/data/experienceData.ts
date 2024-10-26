@@ -36,13 +36,14 @@ export const workExperience: Experience[] = [
   },
   {
     company: "Bigger",
-    location: "Sydney, Australia (Remote)",
+    location: "Australia (Remote)",
     role: "Front End Developer",
     timeframe: "June 2023 - August 2024",
     responsibilities: [
-      "Front-end development using JavaScript, TypeScript, Vite, React.js and Tailwind CSS.",
-      "Back-end development utilizing Nest.js, Docker, TypeORM, SQLite and MySQL, mainly in training projects.",
-      "Testing using Jest and Cypress.",
+      "Participate in front-end development using Vite, TypeScript, JavaScript, and Tailwind CSS following the SOLID principles.",
+      "Backend development using Nest.js, Docker, TypeORM, MySQL and SQLite intraining projects.",
+      "Testing with Cypress and Jest to ensure the quality and functionality of web applications.",
+      "Create and manage tickets to organize my work using ClickUp and follow Scrum and Agile methodologies.",
     ],
     companyUrl: "https://www.linkedin.com/company/biggertech/",
   },
