@@ -24,8 +24,14 @@ export const Home = () => {
             className={`${playfair.className} text-3xl sm:text-5xl lg:text-5xl font-extrabold text-white drop-shadow-lg mb-4`}
             {...fadeInUp}
           >
-            Milena Sol Aron
+            Hi! Welcome to my portfolio
           </motion.h1>
+          <motion.p
+            className={`${playfair.className} text-3xl sm:text-5xl lg:text-5xl font-extrabold text-white drop-shadow-lg mb-4`}
+            {...fadeInUp}
+          >
+            I&apos;m Milena Sol Aron
+          </motion.p>
           <motion.p
             className={`${playfair.className} text-2xl sm:text-3xl lg:text-4xl font-semibold text-white drop-shadow-lg`}
             {...fadeIn}
@@ -74,7 +80,7 @@ export const Home = () => {
           />
           <AboutCard
             icon={<FaBook className="text-3xl text-pink-800 mb-4" />}
-            text="In my free time, I&apos;m learning Software Architecture."
+            text="In my free time, I'm learning Software Architecture."
           />
         </motion.div>
       </div>
