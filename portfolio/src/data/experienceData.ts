@@ -11,15 +11,16 @@ export const workExperience: Experience[] = [
   {
     company: "CarreraIT",
     location: "Argentina",
-    role: "Full Stack Developer",
+    role: "Founder",
     timeframe: "September 2024 - Present",
     responsibilities: [
-      "CarreraIT is a platform I created as a personal project to help individuals from Hispanic countries discover their career paths in the tech field. It offers free, high-quality resources, career orientation guides, and a survey that provides personalized recommendations based on their responses.",
-      "Develop the platform using Next.js, TypeScript, React.js, and Tailwind CSS.",
-      "Write orientation guides in Spanish, my native language.",
-      "Search and incorporate for high-quality, free resources.",
+      "My love for the field led me to create and develop CarreraIT, a platform for people from Hispanic countries who want to work in tech or who already do. It provides surveys to receive feedback on career development, free resources, and orientation guides.",
+      "Developing the platform using Next.js, TypeScript, React.js, and Tailwind CSS, adhering to SOLID principles and focusing on building a maintainable architecture.",
+      "Handling deployment through Vercel.",
+      "Writing orientation guides and creating surveys.",
+      "Searching and incorporating high-quality, free resources."
     ],
-    companyUrl: "https://carrerait.vercel.app",
+    companyUrl: "https://carrerait.lat",
   },
   {
     company: "bitbug",
